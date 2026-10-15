@@ -1,0 +1,398 @@
+<resources>
+    <string name="app_name">ڈیوریس</string>
+    <string name="app_tagline">آف لائن ذاتی تحفظ اور زبردستی سے بچاؤ</string>
+    
+    <!-- Disguise Names -->
+    <string name="alias_default">ڈیوریس</string>
+    <string name="alias_calculator">کیلکولیٹر</string>
+    <string name="alias_notes">نوٹس</string>
+    <string name="alias_clock">گھڑی</string>
+    
+    <!-- Services & Components -->
+    <string name="accessibility_service_name">ڈیوریس ایمرجنسی ٹرگر اور اسکرین لاک</string>
+    <string name="accessibility_service_description">ایمرجنسی والیم بٹن مانیٹر کرتا ہے اور زبردستی کے وقت بغیر انٹرنیٹ کے فوری محفوظ اسکرین لاک لگاتا ہے۔</string>
+    <string name="qs_tile_label">ڈیوریس ایس او ایس</string>
+    <string name="widget_name">ڈیوریس ٹرگر</string>
+    <string name="widget_description">ہوم اسکرین سے فوری ایمرجنسی ٹرگر کے لیے وجٹ۔</string>
+    <string name="widget_trigger_text">SOS</string>
+    
+    <!-- Device Admin -->
+    <string name="device_admin_label">ڈیوریس اسکرین لاک ایڈمن</string>
+    <string name="device_admin_description">اینڈرائیڈ 8.0 سے 8.1 پر یا متبادل کے طور پر فوری اسکرین لاک کرنے کے لیے ایڈمن اجازت۔</string>
+    <string name="device_admin_btn">ڈیوائس ایڈمن آن کریں (متبادل)</string>
+    <string name="device_admin_active">ڈیوائس ایڈمن فعال ہے</string>
+    
+    <!-- UI Navigation & Headers -->
+    <string name="tab_triggers">ٹرگرز</string>
+    <string name="tab_pipeline">حفاظتی پائپ لائن</string>
+    <string name="tab_logs">ریکارڈ لاگ</string>
+    <string name="tab_settings">ترتیبات</string>
+    <string name="status_service_active">سروس فعال ہے</string>
+    <string name="status_service_inactive">سروس غیر فعال ہے</string>
+    
+    <!-- Key Sequence Configuration -->
+    <string name="section_key_sequence">ہارڈویئر بٹن کی ترتیب</string>
+    <string name="key_sequence_summary">ایمرجنسی پروٹوکول چلانے کے لیے والیم بٹن کو تیزی سے دبائیں۔</string>
+    <string name="trigger_key_label">ٹرگر بٹن</string>
+    <string name="trigger_key_vol_down">والیم ڈاؤن (تجویز کردہ)</string>
+    <string name="trigger_key_vol_up">والیم اپ</string>
+    <string name="sequence_count_label">کلک کی تعداد: %1$d</string>
+    <string name="time_window_label">وقت کی حد: %1$.1f سیکنڈ</string>
+    <string name="debounce_label">فلٹر وقفہ: %1$d ملی سیکنڈ</string>
+    <string name="debounce_description">بٹن کے غلطی سے دب جانے یا مسلسل دبائے رکھنے پر غلط ٹرگر سے روکتا ہے۔</string>
+    
+    <!-- Pipeline Actions & Settings -->
+    <string name="section_pipeline">ایمرجنسی پائپ لائن کے اقدامات</string>
+    <string name="pipeline_summary">جب ٹرگر چلے گا، تو منتخب کردہ تمام حفاظتی اقدامات خود بخود اور بغیر رکاوٹ کے عمل میں آئیں گے۔</string>
+    
+    <!-- SMS SOS Action -->
+    <string name="action_sms_title">خاموش ایس ایم ایس (SMS SOS)</string>
+    <string name="action_sms_desc">گوگل میپس لوکیشن لنک کے ساتھ ہنگامی رابطوں کو فوری اور خاموشی سے میسج بھیجتا ہے۔</string>
+    <string name="emergency_contacts_title">ایمرجنسی رابطے (فون نمبرز)</string>
+    <string name="emergency_contacts_hint">فون نمبر درج کریں (مثلاً 03001234567)</string>
+    <string name="add_contact_btn">نمبر شامل کریں</string>
+    <string name="no_contacts_warning">کوئی نمبر شامل نہیں ہے۔ ایس ایم ایس الرٹ نہیں جائے گا۔</string>
+    <string name="custom_sms_template_title">پیغام کا متن</string>
+    <string name="default_sms_message">ایمرجنسی: مجھ سے زبردستی موبائل چھینا جا رہا ہے۔ براہ کرم کال نہ کریں، لوکیشن ملاحظہ کریں: %1$s</string>
+    
+    <!-- Location Tracking Action -->
+    <string name="action_location_title">براہ راست لوکیشن اپ ڈیٹ (15 منٹ)</string>
+    <string name="action_location_desc">ہر 60 سیکنڈ بعد جی پی ایس سے نئی لوکیشن اپ ڈیٹ کر کے ایس ایم ایس بھیجتا ہے۔</string>
+    <string name="location_tracking_service_name">ڈیوریس ایمرجنسی پروٹوکول</string>
+    <string name="location_tracking_notification">پس منظر میں ایمرجنسی لوکیشن اپ ڈیٹ ہو رہی ہے…</string>
+    
+    <!-- Device Lock Action -->
+    <string name="action_lock_title">فوری اسکرین لاک</string>
+    <string name="action_lock_desc">موبائل کو فوری طور پر لاک کر دیتا ہے تاکہ چھیننے والا ایپس یا ڈیٹا نہ کھول سکے۔</string>
+    
+    <!-- DND Action -->
+    <string name="action_dnd_title">موبائل کو مکمل خاموش کرنا (DND)</string>
+    <string name="action_dnd_desc">فون کی آواز اور نوٹیفکیشن بند کر دیتا ہے تاکہ زبردستی کے دوران گھنٹی بج کر خطرہ نہ بنے۔</string>
+    <string name="dnd_permission_btn">DND اجازت دیں</string>
+    
+    <!-- Clear Logs Action -->
+    <string name="action_clear_logs_title">ٹرگر ہونے پر ریکارڈ مٹانا</string>
+    <string name="action_clear_logs_desc">ایپ کا اپنا ریکارڈ خود بخود صاف کر دیتا ہے تاکہ فون چھیننے والے کو کوئی ثبوت نہ ملے۔</string>
+    
+    <!-- Test Mode -->
+    <string name="test_mode_title">حفاظتی ٹیسٹ موڈ (صرف اپنے نمبر پر میسج)</string>
+    <string name="test_mode_desc">جب یہ آن ہو تو ایس ایم ایس صرف آپ کے اپنے ٹیسٹ نمبر پر جائے گا، گھر والوں کو غلط فہمی نہیں ہوگی۔</string>
+    <string name="test_mode_banner">ٹیسٹ موڈ فعال ہے: میسج صرف نیچے دیئے گئے آپ کے اپنے نمبر پر بھیجا جائے گا۔</string>
+    <string name="test_phone_number_label">آپ کا ٹیسٹ فون نمبر:</string>
+    <string name="test_phone_number_hint">مثلاً 03001234567</string>
+    
+    <!-- Phase 3: Decoy & PIN Authentication -->
+    <string name="section_pin_security">پن کوڈ اور دھوکہ دہی (Decoy) تحفظ</string>
+    <string name="pin_security_desc">اصل پن ایپ کی ترتیبات کھولتا ہے۔ جبکہ زبردستی کا پن چھیننے والے کے سامنے ایک بے ضرر خالی ایپ کھولتا ہے اور چپکے سے بیک گراؤنڈ میں ایمرجنسی ایس ایم ایس اور لوکیشن بھیج دیتا ہے۔</string>
+    <string name="pin_protection_enabled">ایپ کھولنے کے لیے پن لازمی کریں</string>
+    <string name="real_pin_label">اصل پن (مکمل رسائی)</string>
+    <string name="duress_pin_label">زبردستی کا پن (دھوکہ ایپ + خاموش SOS)</string>
+    <string name="pin_save_btn">پن کوڈ محفوظ کریں</string>
+    <string name="pin_saved_success">پن کوڈ اینڈرائیڈ کی اسٹور سے اینکرپٹ کر کے محفوظ کر لیا گیا</string>
+    <string name="pin_error_same">اصل پن اور زبردستی کا پن مختلف ہونے چاہئیں!</string>
+    <string name="pin_error_short">پن کم از کم 4 ہندسوں کا ہونا چاہیے</string>
+    <string name="decoy_theme_label">دھوکہ ایپ کی شکل:</string>
+    <string name="decoy_theme_notes">خالی نوٹس ایپ (تجویز کردہ)</string>
+    <string name="decoy_theme_clean">اسٹوریج کلینر ایپ</string>
+    <string name="enter_passcode">پاس کوڈ درج کریں</string>
+    <string name="incorrect_passcode">غلط پاس کوڈ</string>
+    
+    <!-- Decoy Screen Content -->
+    <string name="decoy_notes_title">نوٹس</string>
+    <string name="decoy_new_note">نیا نوٹ</string>
+    <string name="decoy_notes_empty">ابھی تک کوئی نوٹ موجود نہیں۔\nنیا نوٹ لکھنے کے لیے + پر کلک کریں۔</string>
+    <string name="decoy_note_title_hint">عنوان</string>
+    <string name="decoy_note_body_hint">لکھنا شروع کریں…</string>
+    <string name="decoy_note_saved">نوٹ محفوظ ہو گیا</string>
+    <string name="decoy_clean_title">ڈیوائس کیئر</string>
+    <string name="decoy_clean_status">موبائل بالکل صاف اور محفوظ ہے</string>
+    <string name="decoy_clean_desc">0 غیر ضروری فائلز • میموری بہترین حالت میں ہے</string>
+    
+    <!-- Permission Explanation Dialogs -->
+    <string name="perm_sms_explanation_title">ایس ایم ایس کی اجازت کیوں ضروری ہے؟</string>
+    <string name="perm_sms_explanation_body">ڈیوریس ایمرجنسی کے وقت آپ کے بھروسہ مند رابطوں کو براہ راست اور خاموشی سے ایس ایم ایس بھیجتا ہے۔ یہ بغیر انٹرنیٹ کے پورے پاکستان میں 2G/3G/4G سم سے کام کرتا ہے۔</string>
+    <string name="perm_location_explanation_title">لوکیشن اجازت کیوں ضروری ہے؟</string>
+    <string name="perm_location_explanation_body">تاکہ آپ کے ایمرجنسی میسج کے ساتھ گوگل میپس کا درست لوکیشن لنک بھیجا جا سکے اور حرکت کرنے پر ہر 60 سیکنڈ بعد لوکیشن اپ ڈیٹ ہو۔</string>
+    <string name="perm_dnd_explanation_title">ڈو ناٹ ڈسٹرب (DND) کیوں ضروری ہے؟</string>
+    <string name="perm_dnd_explanation_body">تاکہ کالز اور پیغامات کی گھنٹی فوراً بند ہو جائے اور چھیننے والے کے ہاتھ میں موبائل بجنے سے آپ کو مزید نقصان نہ پہنچے۔</string>
+    <string name="perm_notification_explanation_title">نوٹیفکیشن اجازت کیوں ضروری ہے؟</string>
+    <string name="perm_notification_explanation_body">اینڈرائیڈ میں 15 منٹ تک پس منظر میں لوکیشن سروس چلانے کے لیے ایک خاموش نوٹیفکیشن ضروری ہوتا ہے۔</string>
+    
+    <string name="grant_permission_btn">اجازت دیں</string>
+    <string name="dismiss_btn">بند کریں</string>
+    
+    <!-- Haptics -->
+    <string name="section_haptics">وائبریشن فیڈ بیک</string>
+    <string name="haptic_confirm_title">خاموش وائبریشن تصدیق</string>
+    <string name="haptic_confirm_desc">بغیر کسی آواز کے جیب یا ہاتھ میں ہلکی وائبریشن سے ٹرگر ہونے کی تصدیق کرتا ہے۔</string>
+    <string name="test_haptics_button">وائبریشن چیک کریں</string>
+    
+    <!-- Stealth Disguise -->
+    <string name="section_stealth">خفیہ بھیس (ڈسگائز)</string>
+    <string name="stealth_desc">فون اسکرین پر ایپ کا آئیکون اور نام کسی عام ایپ میں تبدیل کریں۔</string>
+    <string name="stealth_select_label">ظاہری شکل منتخب کریں:</string>
+    
+    <!-- Accessibility Permission & Restricted Settings -->
+    <string name="permission_accessibility_title">ایکسیسبیلٹی اجازت</string>
+    <string name="permission_accessibility_desc">فون لاک ہونے یا دوسری ایپس چلنے کے دوران والیم بٹن کے کلکس پکڑنے اور فوری لاک لگانے کے لیے ضروری ہے۔</string>
+    <string name="permission_accessibility_btn">ایکسیسبیلٹی آن کریں</string>
+    <string name="restricted_settings_title">اینڈرائیڈ 13+ محدود ترتیبات (Restricted Setting)</string>
+    <string name="restricted_settings_summary">اینڈرائیڈ 13، 14 اور 15 میں باہر سے انسٹال شدہ ایپس کے لیے ایکسیسبیلٹی خود بخود بلاک ہوتی ہے۔</string>
+    <string name="restricted_settings_step_title">پاکستان کے فونز (Infinix, Tecno, Redmi, Vivo) کے لیے طریقہ:</string>
+    <string name="restricted_step_1">1. نیچے دیئے گئے "ایپ معلومات کھولیں" پر کلک کریں۔</string>
+    <string name="restricted_step_2">2. اوپر دائیں کونے میں تین نقطوں (⋮) پر کلک کریں۔</string>
+    <string name="restricted_step_3">3. "Allow restricted settings" منتخب کریں اور فنگر پرنٹ یا پن لگائیں۔</string>
+    <string name="restricted_step_4">4. واپس یہاں آ کر "ایکسیسبیلٹی آن کریں" دبائیں۔</string>
+    <string name="open_app_info_btn">ایپ معلومات کھولیں</string>
+    
+    <!-- On-Device Trigger Logs -->
+    <string name="logs_title">ڈیوائس ٹرگر آڈٹ لاگ</string>
+    <string name="logs_subtitle">صرف اس موبائل پر محفوظ ہے۔ انٹرنیٹ یا کسی سرور پر کبھی نہیں بھیجا جاتا۔</string>
+    <string name="logs_empty">ابھی تک کوئی ٹرگر ریکارڈ نہیں ہوا۔</string>
+    <string name="clear_logs_btn">ریکارڈ صاف کریں</string>
+    <string name="logs_cleared">تمام ریکارڈ مٹادیا گیا۔</string>
+    
+    <!-- Testing -->
+    <string name="section_test">ٹرگر ٹیسٹ</string>
+    <string name="test_trigger_btn">ابھی ٹرگر ٹیسٹ کریں (پائپ لائن چلائیں)</string>
+    <string name="trigger_fired_toast">پائپ لائن فعال ہو گئی: %1$s</string>
+    
+    <!-- Language -->
+    <string name="switch_language">English</string>
+    <string name="current_language">اردو</string>
+
+    <!-- Phase 4: Protect Apps & OEM Vaults -->
+    <string name="tab_protect_apps">ایپس حفاظت</string>
+    <string name="protect_screen_title">ایپس تنہائی اور سیکیورٹی</string>
+    <string name="protect_screen_subtitle">مالیاتی والٹس اور نجی ایپس کو زبردستی رسائی سے محفوظ بنائیں۔</string>
+    <string name="protect_disclaimer_title">اصول: ایپس کی تنہائی بمقابلہ ان انسٹالیشن</string>
+    <string name="protect_disclaimer_body">ڈریس ایپ آپ کو سسٹم والٹس اور ورک پروفائلز کے ذریعے ایپس چھپانے اور لاک کرنے کی رہنمائی دیتی ہے۔ ڈریس ایپ دیگر ایپس کو ان انسٹال نہیں کرتی اور نہ ہی کر سکتی ہے۔</string>
+    <string name="detected_device_title">اس فون پر شناخت شدہ: %1$s</string>
+    <string name="detected_device_action">تجویز کردہ والٹ کھولیں</string>
+    <string name="subtab_checklist">سیکیورٹی فہرست</string>
+    <string name="subtab_oem_guides">موبائل والٹ گائیڈز</string>
+    <string name="security_score_label">ایپس تحفظ کی پیش رفت</string>
+    <string name="security_score_status">%2$d میں سے %1$d حفاظتی اقدامات مکمل (%3$d%%)</string>
+    <string name="priority_critical">انتہائی اہم</string>
+    <string name="priority_high">اہم</string>
+    <string name="priority_recommended">تجویز کردہ</string>
+    <string name="status_installed">انسٹال شدہ</string>
+    <string name="status_not_installed">انسٹال نہیں ہے</string>
+    <string name="mark_as_secured">محفوظ نشان زد کریں</string>
+    <string name="secured_badge">محفوظ</string>
+    <string name="btn_open_app">ایپ کھولیں</string>
+    <string name="btn_open_settings">سیٹنگز کھولیں</string>
+    <string name="btn_view_steps">ہدایات دیکھیں</string>
+    <string name="btn_hide_steps">ہدایات چھپائیں</string>
+    <string name="reset_checklist_btn">فہرست ری سیٹ کریں</string>
+
+    <!-- Checklist Items -->
+    <string name="check_easypaisa_title">ایزی پیسہ موبائل والٹ</string>
+    <string name="check_easypaisa_desc">موبائل چھیننے کے دوران سب سے زیادہ خطرے والا والٹ۔ بغیر اضافی پروٹیکشن رقم فوراً نکلوائی جا سکتی ہے۔</string>
+    <string name="check_easypaisa_steps">1. ایزی پیسہ کھولیں -> مائی اکاؤنٹ -> بائیو میٹرک تصدیق آن کریں۔\n2. فنگر پرنٹ یا چہرے سے لاگ ان فعال کریں۔\n3. ایسا 5 ہندسوں کا پن کوڈ رکھیں جو موبائل انلاک پن سے بالکل مختلف ہو۔\n4. اکاؤنٹ سیٹنگز میں روزانہ منتقلی کی حد کم رکھیں۔\n5. ایپ کو اپنے موبائل کے خفیہ والٹ (XHide / سیکیور فولڈر / شیلٹر) میں چھپائیں۔</string>
+
+    <string name="check_jazzcash_title">جاز کیش موبائل والٹ</string>
+    <string name="check_jazzcash_desc">پاکستان کا مقبول ترین والٹ۔ بائیو میٹرک اور خفیہ ایم پن لازمی ہے۔</string>
+    <string name="check_jazzcash_steps">1. جاز کیش کھولیں -> سیٹنگز -> بائیو میٹرک / ٹچ آئی ڈی فعال کریں۔\n2. 4 ہندسوں کا ایسا ایم پن چنیں جو کسی دوسری جگہ استعمال نہ ہوا ہو۔\n3. لین دین کے بعد ہمیشہ لاگ آؤٹ کریں۔\n4. اپنا ایم پن کبھی بھی واٹس ایپ یا نوٹس میں محفوظ نہ کریں۔\n5. ایپ کو موبائل والٹ میں چھپائیں۔</string>
+
+    <string name="check_sadapay_title">سادہ پے اور ڈیبٹ کارڈ</string>
+    <string name="check_sadapay_desc">ڈیجیٹل والٹ اور ماسٹر کارڈ۔ ہنگامی حالات میں کارڈ فریز کرنے کی صلاحیت۔</string>
+    <string name="check_sadapay_steps">1. سادہ پے کھولیں -> سیکیورٹی -> بائیو میٹرک لاگ ان فعال کریں۔\n2. پرخطر علاقوں میں جانے سے پہلے ایپ میں کارڈ کو \'فریز\' کر دیں۔\n3. بنیادی رقم والٹ میں کم سے کم رکھیں تاکہ نقصان نہ ہو۔</string>
+
+    <string name="check_nayapay_title">نیا پے والٹ اور ویزا کارڈ</string>
+    <string name="check_nayapay_desc">فنٹیک والٹ بمعہ ویزا ڈیبٹ کارڈ کنٹرولز اور ٹرانزیکشن لاکس۔</string>
+    <string name="check_nayapay_steps">1. نیا پے کھولیں -> پروفائل -> سیکیورٹی -> فنگر پرنٹ انلاک آن کریں۔\n2. 6 ہندسوں کا مضبوط ایم پن لگائیں۔\n3. ضرورت نہ ہونے پر آن لائن اور بین الاقوامی ٹرانزیکشنز لاک رکھیں۔</string>
+
+    <string name="check_banks_title">کمرشل بینک ایپس (HBL، میزان، MCB وغیرہ)</string>
+    <string name="check_banks_desc">بڑی رقوم اور بچت۔ اگر زبردستی کھلوایا جائے تو شدید مالی نقصان کا خدشہ۔</string>
+    <string name="check_banks_steps">1. بینک ایپ میں ٹو فیکٹر تصدیق (2FA) فعال کریں۔\n2. پاس ورڈ خودکار محفوظ کرنے کی اجازت ہرگز نہ دیں۔\n3. بینکنگ ایپس کو مکمل طور پر سیکنڈ اسپیس، سیکیور فولڈر یا شیلٹر ورک پروفائل میں رکھیں تاکہ موبائل چھیننے والے کو یہ ایپس نظر ہی نہ آئیں۔</string>
+
+    <string name="check_whatsapp_title">واٹس ایپ ٹو اسٹیپ اور چیٹ لاک</string>
+    <string name="check_whatsapp_desc">آپ کے نام پر فراڈ پیغامات بھیجنے اور نجی چیٹس پڑھنے سے روکتا ہے۔</string>
+    <string name="check_whatsapp_steps">1. واٹس ایپ -> سیٹنگز -> اکاؤنٹ -> ٹو اسٹیپ ویری فکیشن 6 ہندسوں کے پن سے آن کریں۔\n2. واٹس ایپ -> سیٹنگز -> پرائیویسی -> ایپ لاک فنگر پرنٹ سے فعال کریں۔\n3. حساس چیٹ کھولیں -> پروفائل دبائیں -> چیٹ لاک کو خفیہ کوڈ سے چھپائیں۔</string>
+
+    <string name="check_gallery_title">شناختی کارڈ اور دستاویزات والٹ</string>
+    <string name="check_gallery_desc">شناختی کارڈ اور پاسپورٹ کی تصاویر غیر قانونی سموں اور فراڈ میں استعمال ہو سکتی ہیں۔</string>
+    <string name="check_gallery_steps">1. گوگل فوٹوز میں شناختی کارڈ کی تصاویر منتخب کر کے \'Locked Folder\' میں منتقل کریں۔\n2. سام سنگ/انفنکس/شیاؤمی میں پرائیویٹ سیف، ایکس ہائیڈ یا سیکیور فولڈر کا استعمال کریں۔\n3. عام گیلری اور واٹس ایپ میڈیا سے شناختی کارڈ کی تصاویر لازمی ڈیلیٹ کریں۔</string>
+
+    <string name="check_sim_pin_title">سم کارڈ پن لاک (SIM PIN)</string>
+    <string name="check_sim_pin_desc">چھیننے والے کو سم نکال کر دوسرے فون میں او ٹی پی کوڈز حاصل کرنے سے روکتا ہے۔</string>
+    <string name="check_sim_pin_steps">1. سیٹنگز کھولیں -> سیکیورٹی -> سم کارڈ لاک۔\n2. \'لاک سم کارڈ\' منتخب کریں۔\n3. نیٹ ورک کا ڈیفالٹ پن درج کریں (عام طور پر 0000 یا 1234 ہوتا ہے)۔\n4. فوری طور پر \'Change SIM PIN\' پر کلک کر کے اپنا ذاتی 4 ہندسوں کا کوڈ لگائیں۔\nانتباہ: PUK کوڈ کے بغیر غلط پن 3 بار سے زیادہ مت آزمائیں۔</string>
+
+    <string name="check_lockscreen_notif_title">لاک اسکرین پر او ٹی پی چھپائیں</string>
+    <string name="check_lockscreen_notif_desc">حملہ آور فون انلاک کیے بغیر لاک اسکرین پر بینک او ٹی پی دیکھ سکتے ہیں۔</string>
+    <string name="check_lockscreen_notif_steps">1. سیٹنگز کھولیں -> نوٹیفکیشنز (یا لاک اسکرین)۔\n2. \'Sensitive notifications\' کو \'Hide content\' (مواد چھپائیں) پر سیٹ کریں۔\n3. اس سے فون لاک ہونے پر میسج میں آیا ہوا او ٹی پی کوڈ اسکرین پر نظر نہیں آئے گا۔</string>
+
+    <string name="check_device_passcode_title">مضبوط اسکرین لاک پاس کوڈ</string>
+    <string name="check_device_passcode_desc">سادہ پیٹرن یا 1234 جیسے پن کوڈز کو چھیننے والے سیکنڈوں میں کھول لیتے ہیں۔</string>
+    <string name="check_device_passcode_steps">1. سیٹنگز کھولیں -> سیکیورٹی -> اسکرین لاک۔\n2. پیٹرن کی بجائے 6 ہندسوں کا \'پن\' یا مضبوط \'پاس ورڈ\' منتخب کریں۔\n3. تاریخ پیدائش یا 123456 جیسے آسان کوڈز کبھی نہ رکھیں۔</string>
+
+    <!-- OEM Guides -->
+    <string name="guide_transsion_title">انفنکس / ٹیکنو / آئی ٹیل (XOS اور HiOS)</string>
+    <string name="guide_transsion_feature">ایکس ہائیڈ اور ایپ فریز</string>
+    <string name="guide_transsion_summary">انفنکس اور ٹیکنو فونز میں \'XHide\' اور ایپ فریز کی سہولت موجود ہے جس سے ایپس بالکل غائب ہو جاتی ہیں۔</string>
+    <string name="guide_transsion_steps">1. \'Phone Master\' ایپ کھولیں -> ٹولز -> XHide (یا ہوم اسکرین پر دو انگلیوں سے پھیلائیں)۔\n2. خفیہ ڈائلر کوڈ سیٹ کریں (جیسے ##1234)۔\n3. \'Hidden Apps\' پر کلک کر کے بینکنگ اور والٹ ایپس شامل کریں۔\n4. یہ ایپس موبائل اسکرین اور سرچ سے مکمل غائب ہو جائیں گی!\n5. \'Freezer\' کے ذریعے ایپس کو مکمل ساکت بھی کیا جا سکتا ہے۔</string>
+    <string name="guide_transsion_btn">فون ماسٹر / ڈائلر کھولیں</string>
+
+    <string name="guide_samsung_title">سام سنگ گلیکسی (One UI)</string>
+    <string name="guide_samsung_feature">سیکیور فولڈر (Knox والٹ)</string>
+    <string name="guide_samsung_summary">ہارڈویئر پر مبنی ناکس کنٹینر جو مالیاتی ایپس کی الگ انکرپٹڈ کاپی محفوظ رکھتا ہے۔</string>
+    <string name="guide_samsung_steps">1. سیٹنگز -> سیکیورٹی اور پرائیویسی -> سیکیور فولڈر پر جائیں۔\n2. الگ پاس ورڈ یا پن کوڈ سیٹ کریں۔\n3. تمام بینک اور والٹ ایپس کو سیکیور فولڈر میں شامل کریں۔\n4. سیکیور فولڈر کی سیٹنگز میں \'Hide from Apps screen\' آن کریں۔\n5. اس سے یہ فولڈر مینیو سے غائب ہو جائے گا اور صرف کوئیک سیٹنگز سے کھلے گا۔</string>
+    <string name="guide_samsung_btn">سیکیور فولڈر کھولیں</string>
+
+    <string name="guide_xiaomi_title">شیاؤمی / ریڈمی / پوکو (MIUI اور HyperOS)</string>
+    <string name="guide_xiaomi_feature">سیکنڈ اسپیس اور خفیہ ایپس</string>
+    <string name="guide_xiaomi_summary">موبائل کا بالکل الگ انکرپٹڈ پروفائل بناتا ہے، یا ایپس کو دو انگلیوں کے اشارے سے چھپاتا ہے۔</string>
+    <string name="guide_xiaomi_steps">طریقہ اول (سیکنڈ اسپیس):\n1. سیٹنگز -> اضافی سیٹنگز -> سیکنڈ اسپیس۔\n2. الگ انلاک کوڈ اور فنگر پرنٹ لگائیں۔\n3. بینک ایپس صرف سیکنڈ اسپیس میں رکھیں۔ پہلے اسپیس میں چھیننے والے کو کچھ نظر نہیں آئے گا!\n\nطریقہ دوم (خفیہ ایپس):\n1. \'سیکیورٹی\' ایپ کھولیں -> ایپ لاک -> Hidden Apps۔\n2. چھپانے کے لیے ایپس منتخب کریں۔ ہوم اسکرین پر دو انگلیوں سے پھیلانے پر نظر آئیں گی۔</string>
+    <string name="guide_xiaomi_btn">سیکیورٹی / سیکنڈ اسپیس کھولیں</string>
+
+    <string name="guide_vivo_title">ویوو / آئی کیو (FuntouchOS)</string>
+    <string name="guide_vivo_feature">پرائیویسی اور ایپ انکرپشن</string>
+    <string name="guide_vivo_summary">ویوو فونز میں ایپس کو لاک کرنے اور اسکرین و حالیہ ایپس سے چھپانے کی مکمل سہولت ہے۔</string>
+    <string name="guide_vivo_steps">1. سیٹنگز -> سیکیورٹی -> پرائیویسی اور ایپ انکرپشن۔\n2. پرائیویسی پاس ورڈ لگائیں۔\n3. \'Hide App\' پر کلک کر کے بینک ایپس منتخب کریں۔\n4. \'ہوم اسکرین پر دو انگلیوں سے اوپر سوائپ کر کے دیکھیں\' آن کریں۔\n5. دیکھنے سے پہلے پاس ورڈ تصدیق لازمی رکھیں۔</string>
+    <string name="guide_vivo_btn">ویوو سیکیورٹی کھولیں</string>
+
+    <string name="guide_oppo_title">اوپو / ریئل می / ون پلس (ColorOS)</string>
+    <string name="guide_oppo_feature">ایپس چھپائیں اور پرائیویٹ سیف</string>
+    <string name="guide_oppo_summary">اوپو اور ریئل می فون ڈائلر میں خفیہ کوڈ (جیسے #0000#) کے پیچھے ایپس چھپاتے ہیں۔</string>
+    <string name="guide_oppo_steps">1. سیٹنگز -> پرائیویسی -> Hide apps۔\n2. پرائیویسی پاس ورڈ لگائیں۔\n3. ایسا ایکسیس کوڈ رکھیں جو # سے شروع اور ختم ہو (جیسے #9876#)۔\n4. بینکنگ ایپس منتخب کریں۔ وہ مینیو اور حالیہ ٹاسکس سے مکمل غائب ہو جائیں گی!\n5. کھولنے کے لیے فون ایپ میں جا کر اپنا کوڈ ڈائل کریں۔</string>
+    <string name="guide_oppo_btn">پرائیویسی سیٹنگز کھولیں</string>
+
+    <string name="guide_private_space_title">اینڈرائیڈ 15 پرائیویٹ اسپیس</string>
+    <string name="guide_private_space_feature">سسٹم پرائیویٹ اسپیس</string>
+    <string name="guide_private_space_summary">اینڈرائیڈ 15 کا سرکاری الگ سینڈ باکس جو ایپس ڈراور میں الگ لاک کے ساتھ چھپتا ہے۔</string>
+    <string name="guide_private_space_steps">1. سیٹنگز -> سیکیورٹی اور پرائیویسی -> Private space۔\n2. الگ لاک اسکرین پن یا فنگر پرنٹ سیٹ کریں۔\n3. مالیاتی ایپس کو براہ راست پرائیویٹ اسپیس میں انسٹال کریں۔\n4. \'Hide private space when locked\' فعال کریں تاکہ لاک ہونے پر یہ سیکشن نظر بھی نہ آئے۔</string>
+    <string name="guide_private_space_btn">پرائیویٹ اسپیس کھولیں</string>
+
+    <string name="guide_shelter_title">شیلٹر اور آئی لینڈ (ورک پروفائل سینڈ باکس)</string>
+    <string name="guide_shelter_feature">اینڈرائیڈ ورک پروفائل تنہائی</string>
+    <string name="guide_shelter_summary">تمام اینڈرائیڈ فونز کے لیے ورک پروفائل سینڈ باکس۔ ایک بٹن سے تمام ایپس کو چھپانے اور بند کرنے کی صلاحیت۔</string>
+    <string name="guide_shelter_steps">1. \'Shelter\' ایپ انسٹال کریں (F-Droid یا پلے اسٹور سے)۔\n2. اینڈرائیڈ ورک پروفائل فعال کرنے کی ہدایات پر عمل کریں۔\n3. تمام بینک اور والٹ ایپس کو شیلٹر میں کلون کریں۔\n4. مین پروفائل سے اصل ایپس ان انسٹال کر دیں۔\n5. ایمرجنسی سوئچ: کوئیک سیٹنگز سے \'Work Mode\' کو بند (OFF) کر دیں — تمام ایپس فوری طور پر غائب اور بند ہو جائیں گی!</string>
+    <string name="guide_shelter_btn">شیلٹر کھولیں / انسٹال کریں</string>
+
+    <!-- Phase 5: Money Guide (Financial Coercion Defense) -->
+    <string name="tab_money_guide">مالیاتی گائیڈ</string>
+    <string name="money_guide_title">مالیاتی بلیک میلنگ اور لوٹ مار سے حفاظت</string>
+    <string name="money_guide_subtitle">چھیننے یا زبردستی کے دوران بینک کھاتوں، والٹس اور جمع پونجی کو چوری سے بچائیں۔</string>
+    <string name="money_score_label">مالیاتی سیکیورٹی کی پیش رفت</string>
+    <string name="money_score_status">%2$d میں سے %1$d حفاظتی تدابیر لاگو (%3$d%%)</string>
+    <string name="subtab_pillars">بنیادی اصول</string>
+    <string name="subtab_helplines">ہنگامی بلاکنگ ڈائریکٹری</string>
+    <string name="badge_critical_opsec">انتہائی اہم</string>
+    <string name="badge_recommended_opsec">تجویز کردہ</string>
+    <string name="why_it_matters_title">حملہ آور کا طریقہ واردات اور خطرہ:</string>
+    <string name="action_steps_title">عملی حفاظتی اقدامات:</string>
+    <string name="mark_pillar_implemented">لاگو کر لیا گیا</string>
+    <string name="reset_money_checklist_btn">پیش رفت ری سیٹ کریں</string>
+    <string name="helpline_directory_desc">چھیننے کے فوری بعد کسی بھی دوسرے فون سے اپنی سم بلاک کروائیں اور بینک چینلز منجمد کروائیں تاکہ رقوم منتقل نہ ہو سکیں۔</string>
+    <string name="btn_dial_now">ہیلپ لائن ملائیں</string>
+    <string name="filter_all">تمام</string>
+    <string name="filter_sim">سم کارڈز</string>
+    <string name="filter_wallets">والٹس اور EMIs</string>
+    <string name="filter_banks">کمرشل بینکس</string>
+
+    <!-- Pillar 1: Limits -->
+    <string name="pillar_limits_title">روزانہ اور فی ٹرانزیکشن ٹرانسفر کی حد کم رکھیں</string>
+    <string name="pillar_limits_subtitle">ایزی پیسہ، جاز کیش، راست اور بینک ایپس پر رقم بھیجنے کی حد کم سے کم رکھیں۔</string>
+    <string name="pillar_limits_why">حملہ آور فون انلاک کروا کر فوری طور پر زیادہ سے زیادہ رقم (50 ہزار سے ڈھائی لاکھ) بھیجنے کی کوشش کرتے ہیں۔ پہلے سے کم رکھی گئی حد اس واردات کو روک دیتی ہے۔</string>
+    <string name="pillar_limits_steps">1. ایزی پیسہ / جاز کیش: سیٹنگز میں جا کر روزانہ ٹرانسفر کی حد کم سے کم (جیسے 5 سے 10 ہزار) پر سیٹ کریں۔\n2. بینک ایپس: بینک ہیلپ لائن کال کر کے روزانہ فنڈز ٹرانسفر کی حد کم کروائیں۔\n3. راست (Raast): فوری راست ادائیگیوں کی حد کم رکھیں تاکہ اکاؤنٹ خالی نہ کیا جا سکے۔\n4. ڈیبٹ کارڈ / اے ٹی ایم: خریداری نہ ہونے کی صورت میں کارڈ کی روزانہ پی او ایس حد صفر رکھیں۔</string>
+
+    <!-- Pillar 2: Whitelisting -->
+    <string name="pillar_whitelist_title">بینیفشری کی منظوری اور کولنگ آف تاخیر</string>
+    <string name="pillar_whitelist_subtitle">نئے وصول کنندہ کو رقم بھیجنے پر 2 سے 24 گھنٹے کی تاخیر لاگو کریں۔</string>
+    <string name="pillar_whitelist_why">چھیننے والے لوٹی گئی رقم فوری طور پر اپنے ساتھیوں کے کھاتوں میں بھیجتے ہیں۔ اگر بینک میں نیا وصول کنندہ شامل کرنے پر 2 سے 24 گھنٹے کا وقفہ لازمی ہو تو وہ موقع پر رقم منتقل نہیں کر سکتے۔</string>
+    <string name="pillar_whitelist_steps">1. بینک سیٹنگز میں غیر منظور شدہ کھاتوں میں \'فوری کوئیک پے\' غیر فعال کریں۔\n2. صرف قابل اعتماد اہلخانہ اور یوٹیلیٹی بلز کو پہلے سے منظور شدہ رکھیں۔\n3. اپنے بینک کی پالیسی چیک کریں (میزان، HBL وغیرہ میں نیا نمبر شامل کرنے پر 2 سے 24 گھنٹے کی تاخیر ہوتی ہے)۔\n4. زبردستی نیا اکاؤنٹ شامل کروانے پر ایپ 2 گھنٹے انتظار کا میسج دکھائے گی۔</string>
+
+    <!-- Pillar 3: Time-Lock -->
+    <string name="pillar_timelock_title">ٹائم لاکڈ بچت اور کھاتوں کی علیحدگی</string>
+    <string name="pillar_timelock_subtitle">اپنی زندگی بھر کی جمع پونجی کبھی بھی روزمرہ استعمال والے موبائل کے کرنٹ اکاؤنٹ میں نہ رکھیں۔</string>
+    <string name="pillar_timelock_why">کرنٹ اکاؤنٹ میں پڑی رقم چھیننے کے دوران سیکنڈوں میں منتقل ہو سکتی ہے۔ فکسڈ ڈپازٹ یا سیونگ لاکرز میں رکھی رقم موقع پر نکلوائی نہیں جا سکتی۔</string>
+    <string name="pillar_timelock_steps">1. دو کھاتوں کی حکمت عملی: سڑک پر روزمرہ کے لیے 3 سے 5 ہزار رکھیں اور اصل رقم کسی دوسرے بینک کے نجی اکاؤنٹ میں رکھیں۔\n2. ٹرم ڈپازٹس (TDRs): رقم کو فکسڈ ڈپازٹ یا بچت سرٹیفکیٹس میں رکھیں جو موبائل ایپ سے فوری منتقل نہیں ہو سکتے۔\n3. ڈیجیٹل والٹ لاکرز: سادہ پے والٹس یا بچت کمیٹیاں استعمال کریں جن سے رقم نکلنے میں 24 گھنٹے لگتے ہیں۔\n4. اپنے اہم ترین بچت والے بینک کی ایپ روزمرہ استعمال کے موبائل پر ہرگز انسٹال نہ رکھیں۔</string>
+
+    <!-- Pillar 4: Hardware Wallet -->
+    <string name="pillar_crypto_title">کولڈ اسٹوریج اور موبائل سے کرپٹو کا خاتمہ</string>
+    <string name="pillar_crypto_subtitle">روزمرہ موبائل پر کوئی کرپٹو ایکسچینج یا ہاٹ والٹ نہ رکھیں۔</string>
+    <string name="pillar_crypto_why">جرائم پیشہ افراد موبائل میں بائننس، او کے ایکس یا ٹرسٹ والٹ تلاش کرتے ہیں۔ چونکہ کرپٹو ٹرانزیکشن واپس نہیں ہو سکتی، اس لیے وہ پورا والٹ خالی کروا لیتے ہیں۔</string>
+    <string name="pillar_crypto_steps">1. ہارڈویئر والٹ: تمام کرپٹو اثاثے گھر پر موجود ہارڈویئر والٹ (لیجر، ٹریزر وغیرہ) میں آف لائن رکھیں۔\n2. والٹس ڈیلیٹ کریں: گھر سے باہر لے جانے والے موبائل میں ٹرسٹ والٹ یا بائننس ہرگز نہ رکھیں۔\n3. سیڈ فریز کی حفاظت: اپنے 12 یا 24 الفاظ کے خفیہ کوڈ کی تصویر گوگل ڈرائیو یا واٹس ایپ پر کبھی نہ رکھیں۔\n4. ٹریڈنگ کے لیے گھر پر الگ محفوظ ٹیبلٹ یا لیپ ٹاپ استعمال کریں۔</string>
+
+    <!-- Pillar 5: Remote Lock -->
+    <string name="pillar_remote_title">اینڈرائیڈ فائنڈ مائی ڈیوائس اور ہنگامی بلاکنگ</string>
+    <string name="pillar_remote_subtitle">موبائل چھن جانے کے بعد ریموٹ وائپ اور فوری ہیلپ لائن بلاکنگ کی تیاری۔</string>
+    <string name="pillar_remote_why">موبائل چھن جانے کے بعد ابتدائی 15 منٹ انتہائی اہم ہوتے ہیں۔ فوری ریموٹ لاک کرنے اور سم بلاک کروانے سے بینک او ٹی پی پیغامات موصول ہونا بند ہو جاتے ہیں۔</string>
+    <string name="pillar_remote_steps">1. \'Find My Device\' آن رکھیں: سیٹنگز -> گوگل -> Find My Device چیک کریں۔\n2. اپنے گوگل اکاؤنٹ کا پاس ورڈ یاد رکھیں تاکہ android.com/find سے فوری فون وائپ یا لاک کر سکیں۔\n3. پہلی ترجیح: موبائل چھنتے ہی کسی دوسرے فون سے فوری اپنی سم بلاک کروائیں تاکہ او ٹی پی بند ہو جائے۔\n4. دوسری ترجیح: نیچے دی گئی ڈائریکٹری سے اپنے بینک اور والٹ ہیلپ لائن پر کال کر کے اکاؤنٹ بلاک کروائیں۔</string>
+
+    <!-- Helpline Notes -->
+    <string name="helpline_sim_block_note">نمائندے سے کہیں کہ سم چھن گئی ہے، فوری طور پر تمام کالز اور ایس ایم ایس بلاک کریں۔</string>
+    <string name="helpline_wallet_block_note">موبائل اکاؤنٹ اور ڈیبٹ کارڈ عارضی طور پر فوری منجمد کرنے کی درخواست کریں۔</string>
+    <string name="helpline_bank_block_note">انٹرنیٹ بینکنگ، موبائل ایپ لاگ ان اور اے ٹی ایم کارڈ فوری بلاک کروائیں۔</string>
+
+    <!-- Phase 6: Hardening, Doze, Keep-Alive, Accidental Guards, Privacy Screen -->
+    <string name="tab_hardening">سسٹم مضبوطی</string>
+    <string name="hardening_title">ڈیوائس استحکام اور مضبوطی</string>
+    <string name="hardening_subtitle">بیک گراؤنڈ پروسیس کے تسلسل، غلط ٹرگر کی روک تھام اور اسکرین پرائیویسی کی سیٹنگز۔</string>
+
+    <!-- Doze & Battery Optimization -->
+    <string name="section_doze_title">بیک گراؤنڈ استثنیٰ (Doze Mode)</string>
+    <string name="section_doze_desc">موبائل لاک ہونے پر سسٹم کو ڈریس ایپ سلانے سے روکتا ہے تاکہ ہنگامی کی پیڈ ترتیب بلا تعطل کام کرے۔</string>
+    <string name="doze_status_exempted">بیٹری استثنیٰ: فعال ہے (بہترین حالت)</string>
+    <string name="doze_status_not_exempted">بیٹری آپٹیمائزیشن: فعال ہے (سسٹم سلیپ کی وجہ سے تاخیر کا خدشہ)</string>
+    <string name="btn_request_doze">بیٹری سیور سے استثنیٰ حاصل کریں</string>
+    <string name="perm_doze_explanation_title">بیٹری استثنیٰ کی ضرورت کیوں ہے؟</string>
+    <string name="perm_doze_explanation_body">اینڈرائیڈ کے بیٹری مینیجرز (خاص طور پر انفنکس، ٹیکنو، شیاؤمی اور سام سنگ پر) موبائل لاک ہونے پر بیک گراؤنڈ ایپس کو منجمد کر دیتے ہیں۔ ڈریس ایپ کو مستثنیٰ رکھنے سے والیم بٹن دبانے پر ہنگامی ردعمل فوری کام کرتا ہے۔</string>
+
+    <!-- OEM Keep-Alive Wizard -->
+    <string name="section_keepalive_title">موبائل کمپنی وزرڈ (Keep-Alive)</string>
+    <string name="section_keepalive_desc">موبائل مینوفیکچرر کے ٹاسک کلر کو ڈریس ایپ کو بند کرنے سے روکنے کی سیٹنگز۔</string>
+    <string name="keepalive_transsion_title">انفنکس / ٹیکنو / آئی ٹیل (XOS / HiOS)</string>
+    <string name="keepalive_transsion_summary">انفنکس اور ٹیکنو فونز پاور ماسٹر اور بیٹری لیب کے ذریعے بیک گراؤنڈ ایپس بند کر دیتے ہیں۔</string>
+    <string name="keepalive_transsion_steps">1. فون ماسٹر کھولیں -> Auto-start management -> ڈریس ایپ کو آن کریں۔\n2. حالیہ ایپس (Recent Apps) میں جا کر ڈریس کو نیچے سوائپ کر کے لاک (تالا) لگائیں۔\n3. بیٹری لیب سیٹنگز میں جا کر ڈریس ایپ کے لیے سلیپ موڈ بند کریں۔</string>
+    <string name="keepalive_transsion_btn">فون ماسٹر / آٹو سٹارٹ کھولیں</string>
+
+    <string name="keepalive_xiaomi_title">شیاؤمی / ریڈمی / پوکو (MIUI / HyperOS)</string>
+    <string name="keepalive_xiaomi_summary">شیاؤمی کے فونز ریم بچانے کے لیے بیک گراؤنڈ ایپس کو بند کر دیتے ہیں۔</string>
+    <string name="keepalive_xiaomi_steps">1. سیٹنگز -> ایپس -> پرمیشنز -> آٹو سٹارٹ -> ڈریس ایپ کو آن کریں۔\n2. سیٹنگز -> بیٹری -> ڈریس ایپ -> \'No restrictions\' منتخب کریں۔\n3. حالیہ ایپس میں ڈریس کارڈ پر دبا کر تالے کے نشان پر کلک کریں۔</string>
+    <string name="keepalive_xiaomi_btn">آٹو سٹارٹ اور بیٹری سیٹنگز کھولیں</string>
+
+    <string name="keepalive_vivo_title">ویوو / آئی کیو (FuntouchOS)</string>
+    <string name="keepalive_vivo_summary">ویوو فونز غیر منظور شدہ ایپس کو بیک گراؤنڈ میں روک دیتے ہیں۔</string>
+    <string name="keepalive_vivo_steps">1. سیٹنگز -> بیٹری -> High background power consumption -> ڈریس کو اجازت دیں۔\n2. آئی مینیجر -> آٹو سٹارٹ مینیجر -> ڈریس ایپ کو آن کریں۔\n3. حالیہ ایپس میں ڈریس کو نیچے سوائپ کر کے لاک کریں۔</string>
+    <string name="keepalive_vivo_btn">ویوو آئی مینیجر کھولیں</string>
+
+    <string name="keepalive_oppo_title">اوپو / ریئل می / ون پلس (ColorOS)</string>
+    <string name="keepalive_oppo_summary">اوپو اور ریئل می فونز اسکرین بند ہونے پر ایپس بند کر دیتے ہیں۔</string>
+    <string name="keepalive_oppo_steps">1. سیٹنگز -> بیٹری -> ایپ بیٹری مینیجمنٹ -> بیک گراؤنڈ سرگرمی کی اجازت دیں۔\n2. \'Allow auto-launch\' فعال کریں۔\n3. حالیہ ایپس میں تین نقطوں پر کلک کر کے لاک کریں۔</string>
+    <string name="keepalive_oppo_btn">بیٹری مینیجمنٹ کھولیں</string>
+
+    <string name="keepalive_samsung_title">سام سنگ گلیکسی (One UI)</string>
+    <string name="keepalive_samsung_summary">سام سنگ بیک گراؤنڈ ایپس کو ڈیپ سلیپ میں منتقل کر دیتا ہے۔</string>
+    <string name="keepalive_samsung_steps">1. سیٹنگز -> بیٹری -> Background usage limits -> Never sleeping apps -> ڈریس ایپ شامل کریں۔\n2. \'غیر استعمال شدہ ایپس کو سلائیں\' کا آپشن بند کریں۔</string>
+    <string name="keepalive_samsung_btn">سام سنگ بیٹری سیٹنگز کھولیں</string>
+
+    <string name="keepalive_generic_title">معیاری اینڈرائیڈ فون</string>
+    <string name="keepalive_generic_summary">بیک گراؤنڈ ڈیٹا اور بیٹری کو بغیر پابندی پر سیٹ کریں۔</string>
+    <string name="keepalive_generic_steps">1. سیٹنگز -> ایپس -> ڈریس -> بیٹری -> بغیر پابندی (Unrestricted)۔\n2. موبائل ڈیٹا -> بیک گراؤنڈ ڈیٹا کے استعمال کی اجازت دیں۔</string>
+    <string name="keepalive_generic_btn">ایپ معلومات کھولیں</string>
+
+    <!-- Accidental Guards -->
+    <string name="section_accidental_guards">غلط ٹرگر سے بچاؤ</string>
+    <string name="accidental_guards_desc">جیب، بیگ یا غلطی سے بٹن دبنے پر الارم بجنے سے بچاؤ کے اقدامات۔</string>
+    <string name="guard_toggle_label">سمارٹ حفاظتی فلٹرز آن کریں</string>
+    <string name="abort_window_title">ہنگامی تاخیر اور منسوخی کی سہولت</string>
+    <string name="abort_window_desc">بٹن کی ترتیب مکمل ہونے پر فون دو بار وائبریٹ ہو کر چند سیکنڈ رکتا ہے۔ مخالف والیم بٹن دبانے سے ٹرگر منسوخ ہو جاتا ہے۔</string>
+    <string name="abort_window_instant">فوری (بغیر تاخیر)</string>
+    <string name="abort_window_3s">3 سیکنڈ کا وقفہ</string>
+    <string name="abort_window_5s">5 سیکنڈ کا وقفہ</string>
+    <string name="screen_filter_title">اسکرین کی حالت کی شرط</string>
+    <string name="screen_filter_all">ہر حالت میں (اسکرین لاک یا آن)</string>
+    <string name="screen_filter_off_only">صرف اسکرین بند ہونے پر (لاک حالت)</string>
+    <string name="screen_filter_on_only">صرف اسکرین آن ہونے پر</string>
+
+    <!-- Privacy Screen & Camouflage -->
+    <string name="section_privacy_screen">پرائیویسی اور اسکرین چھپاؤ</string>
+    <string name="privacy_screen_desc">اسکرین شاٹس اور اسکرین ریکارڈنگ روکتا ہے اور حالیہ ایپس میں ڈیٹا چھپاتا ہے۔</string>
+    <string name="flag_secure_label">اسکرین شاٹ اور حالیہ ٹاسکس بلاک (FLAG_SECURE)</string>
+    <string name="flag_secure_desc">ایپ سوئچر میں کالی اسکرین دکھاتا ہے تاکہ کوئی پیچھے سے آپ کی سیٹنگز نہ دیکھ سکے۔</string>
+    <string name="test_camouflage_btn">فوری اسکرین کیموفلاج دیکھیں</string>
+    <string name="camouflage_notice">کیموفلاج سے نکلنے کے لیے اسکرین پر دو بار ٹیپ کریں یا بیک بٹن دبائیں۔</string>
+    <string name="fake_update_text">سسٹم اپ ڈیٹ انسٹال ہو رہا ہے...\nڈیوائس بند نہ کریں (34%)</string>
+</resources>

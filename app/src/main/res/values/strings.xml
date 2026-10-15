@@ -1,0 +1,398 @@
+<resources>
+    <string name="app_name">Duress</string>
+    <string name="app_tagline">Offline Personal Safety &amp; Anti-Coercion</string>
+    
+    <!-- Disguise Names -->
+    <string name="alias_default">Duress</string>
+    <string name="alias_calculator">Calculator</string>
+    <string name="alias_notes">Quick Notes</string>
+    <string name="alias_clock">Clock</string>
+    
+    <!-- Services & Components -->
+    <string name="accessibility_service_name">Duress Emergency Trigger &amp; Lock</string>
+    <string name="accessibility_service_description">Monitors hardware key sequences to trigger safety protocols, and executes immediate secure screen locking (Android 9+) without cloud or network access.</string>
+    <string name="qs_tile_label">Duress SOS</string>
+    <string name="widget_name">Duress Trigger</string>
+    <string name="widget_description">One-tap emergency trigger widget for your home screen.</string>
+    <string name="widget_trigger_text">SOS</string>
+    
+    <!-- Device Admin -->
+    <string name="device_admin_label">Duress Screen Lock Admin</string>
+    <string name="device_admin_description">Allows Duress to immediately lock the device on Android 8.0–8.1 or if accessibility lock is unavailable.</string>
+    <string name="device_admin_btn">Enable Device Admin (Fallback)</string>
+    <string name="device_admin_active">Device Admin Active</string>
+    
+    <!-- UI Navigation & Headers -->
+    <string name="tab_triggers">Triggers</string>
+    <string name="tab_pipeline">Pipeline</string>
+    <string name="tab_logs">Trigger Logs</string>
+    <string name="tab_settings">Settings</string>
+    <string name="status_service_active">Service Active</string>
+    <string name="status_service_inactive">Service Inactive</string>
+    
+    <!-- Key Sequence Configuration -->
+    <string name="section_key_sequence">Hardware Key Sequence</string>
+    <string name="key_sequence_summary">Press configured volume button rapidly to trigger safety protocol.</string>
+    <string name="trigger_key_label">Trigger Button</string>
+    <string name="trigger_key_vol_down">Volume Down (Recommended)</string>
+    <string name="trigger_key_vol_up">Volume Up</string>
+    <string name="sequence_count_label">Number of Clicks: %1$d</string>
+    <string name="time_window_label">Within Time Window: %1$.1f seconds</string>
+    <string name="debounce_label">Debounce Interval: %1$d ms</string>
+    <string name="debounce_description">Prevents accidental multi-clicks or continuous key holds from falsely triggering.</string>
+    
+    <!-- Pipeline Actions & Settings -->
+    <string name="section_pipeline">Emergency Pipeline Actions</string>
+    <string name="pipeline_summary">When duress is triggered, each enabled action executes safely and independently.</string>
+    
+    <!-- SMS SOS Action -->
+    <string name="action_sms_title">Silent SMS SOS</string>
+    <string name="action_sms_desc">Silently sends distress message with Google Maps location link to emergency contacts.</string>
+    <string name="emergency_contacts_title">Emergency Contacts</string>
+    <string name="emergency_contacts_hint">Enter phone number (e.g. 03001234567 or +923001234567)</string>
+    <string name="add_contact_btn">Add Contact</string>
+    <string name="no_contacts_warning">No contacts added. SMS SOS will be skipped.</string>
+    <string name="custom_sms_template_title">SOS Message Template</string>
+    <string name="default_sms_message">EMERGENCY: I am being forced to hand over my phone. Please do not call. My location: %1$s</string>
+    
+    <!-- Location Tracking Action -->
+    <string name="action_location_title">Live Location Updates</string>
+    <string name="action_location_desc">Refreshes GPS location every 60s for 15 minutes, updating contacts with fresh maps link.</string>
+    <string name="location_tracking_service_name">Duress Safety Protocol</string>
+    <string name="location_tracking_notification">Updating emergency coordinates in background…</string>
+    
+    <!-- Device Lock Action -->
+    <string name="action_lock_title">Instant Device Lock</string>
+    <string name="action_lock_desc">Locks the screen immediately (API 28+ Accessibility Lock, API 26–27 Device Admin).</string>
+    
+    <!-- DND Action -->
+    <string name="action_dnd_title">Silence Phone (Do Not Disturb)</string>
+    <string name="action_dnd_desc">Puts device in total silence so incoming calls or notifications do not alert attackers.</string>
+    <string name="dnd_permission_btn">Grant DND Access</string>
+    
+    <!-- Clear Logs Action -->
+    <string name="action_clear_logs_title">Wipe Duress Logs on Trigger</string>
+    <string name="action_clear_logs_desc">Clears all app trigger traces on-device so attackers cannot see duress mode was fired.</string>
+    
+    <!-- Test Mode -->
+    <string name="test_mode_title">Safety Test Mode (SMS to Self Only)</string>
+    <string name="test_mode_desc">When enabled, distress SMS is sent strictly to your own test number, avoiding false panic.</string>
+    <string name="test_mode_banner">TEST MODE ACTIVE: SMS alerts will only be sent to your test number below.</string>
+    <string name="test_phone_number_label">Your Test Phone Number:</string>
+    <string name="test_phone_number_hint">e.g. 03000000000</string>
+    
+    <!-- Phase 3: Decoy & PIN Authentication -->
+    <string name="section_pin_security">PIN &amp; Decoy Protection</string>
+    <string name="pin_security_desc">Real PIN unlocks settings. Duress PIN unlocks an innocent decoy app while silently firing the emergency pipeline in the background.</string>
+    <string name="pin_protection_enabled">Require PIN to Open App</string>
+    <string name="real_pin_label">Real PIN (Full Access)</string>
+    <string name="duress_pin_label">Duress PIN (Decoy + Silent SOS)</string>
+    <string name="pin_save_btn">Save Encrypted PINs</string>
+    <string name="pin_saved_success">PINs encrypted and saved via Android KeyStore</string>
+    <string name="pin_error_same">Real PIN and Duress PIN must be different!</string>
+    <string name="pin_error_short">PIN must be at least 4 digits</string>
+    <string name="decoy_theme_label">Decoy App Style:</string>
+    <string name="decoy_theme_notes">Empty Notes App</string>
+    <string name="decoy_theme_clean">Storage Cleaner App</string>
+    <string name="enter_passcode">Enter Passcode</string>
+    <string name="incorrect_passcode">Incorrect Passcode</string>
+    
+    <!-- Decoy Screen Content -->
+    <string name="decoy_notes_title">Notes</string>
+    <string name="decoy_new_note">New Note</string>
+    <string name="decoy_notes_empty">No notes yet.\nTap + to write your first note.</string>
+    <string name="decoy_note_title_hint">Title</string>
+    <string name="decoy_note_body_hint">Start typing…</string>
+    <string name="decoy_note_saved">Note saved</string>
+    <string name="decoy_clean_title">Device Care</string>
+    <string name="decoy_clean_status">Device Healthy &amp; Clean</string>
+    <string name="decoy_clean_desc">0 Junk Files • 100% Storage Optimized</string>
+    
+    <!-- Permission Explanation Dialogs -->
+    <string name="perm_sms_explanation_title">Why SMS Permission is Needed</string>
+    <string name="perm_sms_explanation_body">Duress sends silent, direct SMS messages to your emergency contacts when you trigger the key sequence. It requires no internet, data bundle, or Wi-Fi, working reliably across Pakistan on 2G/3G/4G.</string>
+    <string name="perm_location_explanation_title">Why Location Permission is Needed</string>
+    <string name="perm_location_explanation_body">To append an accurate Google Maps link to your distress message and update your location every 60 seconds for 15 minutes if you are moved.</string>
+    <string name="perm_dnd_explanation_title">Why Do Not Disturb Access is Needed</string>
+    <string name="perm_dnd_explanation_body">To instantly mute incoming calls, rings, and notifications so that your phone remains silent in your pocket or mugger\'s hands without alerting them.</string>
+    <string name="perm_notification_explanation_title">Why Notification Permission is Needed</string>
+    <string name="perm_notification_explanation_body">Android requires a discreet foreground notification to keep the 15-minute emergency location updater alive in the background.</string>
+    
+    <string name="grant_permission_btn">Grant Permission</string>
+    <string name="dismiss_btn">Dismiss</string>
+    
+    <!-- Haptics -->
+    <string name="section_haptics">Haptic Feedback</string>
+    <string name="haptic_confirm_title">Tactile Vibration Confirm</string>
+    <string name="haptic_confirm_desc">Vibrates subtly in pocket/hand to confirm trigger activated without making any sound.</string>
+    <string name="test_haptics_button">Test Vibration</string>
+    
+    <!-- Stealth Disguise -->
+    <string name="section_stealth">Stealth Disguise</string>
+    <string name="stealth_desc">Disguise the app icon and label on your launcher as an everyday utility.</string>
+    <string name="stealth_select_label">Launcher Disguise:</string>
+    
+    <!-- Accessibility Permission & Restricted Settings -->
+    <string name="permission_accessibility_title">Accessibility Permission</string>
+    <string name="permission_accessibility_desc">Required to detect volume button presses while the phone is locked or in other apps.</string>
+    <string name="permission_accessibility_btn">Enable Accessibility</string>
+    <string name="restricted_settings_title">Android 13+ Sideload Restricted Setting</string>
+    <string name="restricted_settings_summary">Android 13, 14, and 15 block Accessibility for sideloaded apps by default until manually allowed.</string>
+    <string name="restricted_settings_step_title">Bypass Steps for Pakistan Budget Phones:</string>
+    <string name="restricted_step_1">1. Tap "Open App Info" below.</string>
+    <string name="restricted_step_2">2. In App Info, tap the 3 dots (⋮) in the top right corner.</string>
+    <string name="restricted_step_3">3. Tap "Allow restricted settings" and verify PIN / Fingerprint.</string>
+    <string name="restricted_step_4">4. Return here and tap "Enable Accessibility".</string>
+    <string name="open_app_info_btn">Open App Info</string>
+    
+    <!-- On-Device Trigger Logs -->
+    <string name="logs_title">On-Device Trigger Audit Log</string>
+    <string name="logs_subtitle">Stored strictly on this device. Never sent to any server.</string>
+    <string name="logs_empty">No triggers recorded yet.</string>
+    <string name="clear_logs_btn">Clear History</string>
+    <string name="logs_cleared">Trigger logs cleared.</string>
+    
+    <!-- Testing -->
+    <string name="section_test">Trigger Simulation</string>
+    <string name="test_trigger_btn">Test Trigger Now (Runs Pipeline)</string>
+    <string name="trigger_fired_toast">Pipeline Activated: %1$s</string>
+    
+    <!-- Language -->
+    <string name="switch_language">اردو (Urdu)</string>
+    <string name="current_language">English</string>
+
+    <!-- Phase 4: Protect Apps & OEM Vaults -->
+    <string name="tab_protect_apps">Protect Apps</string>
+    <string name="protect_screen_title">App Hardening &amp; Isolation</string>
+    <string name="protect_screen_subtitle">Protect financial wallets and private apps against coerced access.</string>
+    <string name="protect_disclaimer_title">Notice: App Isolation vs Uninstallation</string>
+    <string name="protect_disclaimer_body">Duress provides checklists, guides, and deep links to help you hide and isolate apps using your device\'s built-in secure vaults or Android Work Profiles. Duress does not and cannot uninstall other apps.</string>
+    <string name="detected_device_title">Detected on this device: %1$s</string>
+    <string name="detected_device_action">Open Recommended Vault</string>
+    <string name="subtab_checklist">Security Checklist</string>
+    <string name="subtab_oem_guides">OEM Vault Guides</string>
+    <string name="security_score_label">App Hardening Progress</string>
+    <string name="security_score_status">%1$d of %2$d Protections Configured (%3$d%%)</string>
+    <string name="priority_critical">CRITICAL</string>
+    <string name="priority_high">HIGH</string>
+    <string name="priority_recommended">RECOMMENDED</string>
+    <string name="status_installed">Installed</string>
+    <string name="status_not_installed">Not Installed</string>
+    <string name="mark_as_secured">Mark Secured</string>
+    <string name="secured_badge">Secured</string>
+    <string name="btn_open_app">Open App</string>
+    <string name="btn_open_settings">Open Settings</string>
+    <string name="btn_view_steps">View Instructions</string>
+    <string name="btn_hide_steps">Hide Instructions</string>
+    <string name="reset_checklist_btn">Reset Checklist</string>
+
+    <!-- Checklist Items -->
+    <string name="check_easypaisa_title">Easypaisa Mobile Wallet</string>
+    <string name="check_easypaisa_desc">High-risk target during phone snatching. Funds can be drained in seconds without in-app protection.</string>
+    <string name="check_easypaisa_steps">1. Open Easypaisa -> My Account -> Biometric Verification / Fingerprint Login.\n2. Enable Fingerprint/Face login.\n3. Set a unique 5-digit PIN that differs completely from your phone unlock PIN.\n4. Lower daily transfer limits in account settings.\n5. Hide app inside your OEM vault (XHide / Secure Folder / Shelter).</string>
+
+    <string name="check_jazzcash_title">JazzCash Mobile Wallet</string>
+    <string name="check_jazzcash_desc">Pakistan\'s most popular wallet. Requires biometric enforcement and MPIN secrecy.</string>
+    <string name="check_jazzcash_steps">1. Open JazzCash -> Settings -> Enable Biometric / Touch ID.\n2. Choose a dedicated 4-digit MPIN never used on other platforms.\n3. Always log out after completing transactions.\n4. Never save your MPIN in WhatsApp or Notes.\n5. Hide app inside OEM secure space.</string>
+
+    <string name="check_sadapay_title">SadaPay EMI &amp; Debit Card</string>
+    <string name="check_sadapay_desc">Digital wallet and Mastercard. Features in-app card freeze for hostile situations.</string>
+    <string name="check_sadapay_steps">1. Open SadaPay -> Security -> Enable Biometric login.\n2. When moving through high-risk streets, tap your Card and select \'Freeze Card\'.\n3. Keep your primary savings in SadaBiz or secondary vault, leaving minimal balance in wallet.</string>
+
+    <string name="check_nayapay_title">NayaPay Wallet &amp; Visa</string>
+    <string name="check_nayapay_desc">Fintech wallet with instant Visa debit card controls and transaction locks.</string>
+    <string name="check_nayapay_steps">1. Open NayaPay -> Profile -> Security -> Enable Face/Fingerprint unlock.\n2. Set up a 6-digit MPIN.\n3. Lock international and online transactions when not actively using them.</string>
+
+    <string name="check_banks_title">Commercial Bank Apps (HBL, Meezan, MCB, UBL, etc.)</string>
+    <string name="check_banks_desc">Holds major family savings. High coercion danger if attackers force you to unlock.</string>
+    <string name="check_banks_steps">1. Enable Two-Factor Authentication (2FA) inside bank settings.\n2. Never enable \'Remember Password\' or \'Auto-fill\'.\n3. Isolate commercial banking apps completely inside Second Space, Secure Folder, or Shelter work profile so they do not even appear in your phone\'s app list.</string>
+
+    <string name="check_whatsapp_title">WhatsApp Two-Step &amp; Chat Lock</string>
+    <string name="check_whatsapp_desc">Prevents attackers from impersonating you or reading private sensitive messages.</string>
+    <string name="check_whatsapp_steps">1. WhatsApp -> Settings -> Account -> Two-step verification -> Turn on with 6-digit PIN.\n2. WhatsApp -> Settings -> Privacy -> App lock -> Unlock with fingerprint / face.\n3. Open any confidential chat -> Tap profile -> Chat lock -> Hide with secret code.</string>
+
+    <string name="check_gallery_title">CNIC &amp; Personal Documents Vault</string>
+    <string name="check_gallery_desc">Photos of CNIC, passport, or family cards can be exploited for SIM issuance and identity theft.</string>
+    <string name="check_gallery_steps">1. In Google Photos, select photos of CNIC/Passports -> Move to \'Locked Folder\'.\n2. On Samsung/Infinix/Xiaomi/Vivo/Oppo, move photos into Private Safe / XHide / Secure Folder.\n3. Delete sensitive CNIC pictures from the regular camera roll and WhatsApp media.</string>
+
+    <string name="check_sim_pin_title">SIM Card Lock (SIM PIN)</string>
+    <string name="check_sim_pin_desc">Prevents thieves from moving your SIM to another phone to receive bank OTP SMS codes.</string>
+    <string name="check_sim_pin_steps">1. Open Settings -> Security -> SIM card lock.\n2. Tap \'Lock SIM card\'.\n3. Enter default carrier PIN (Jazz/Telenor/Zong/Ufone default is typically 0000 or 1234).\n4. Immediately tap \'Change SIM PIN\' and set a personal 4-digit code.\nWARNING: Do not enter wrong PIN more than 3 times without your SIM PUK code.</string>
+
+    <string name="check_lockscreen_notif_title">Hide Lock Screen OTP Previews</string>
+    <string name="check_lockscreen_notif_desc">Thieves can read bank login OTPs directly on locked screens without unlocking.</string>
+    <string name="check_lockscreen_notif_steps">1. Open Settings -> Notifications (or Display -> Lock screen).\n2. Select \'Sensitive notifications\' and set to \'Don\'t show\' or \'Hide content\'.\n3. Verify that receiving an SMS when locked only shows \'New message\' without revealing the text or verification code.</string>
+
+    <string name="check_device_passcode_title">Strong Screen Lock Passcode</string>
+    <string name="check_device_passcode_desc">Simple patterns or 4-digit numbers like 0000 or 1234 are guessed instantly by snatchers.</string>
+    <string name="check_device_passcode_steps">1. Open Settings -> Security -> Screen lock.\n2. Switch from Pattern to \'PIN\' (at least 6 digits) or \'Password\'.\n3. Never use birth years, phone numbers, or repeated digits.</string>
+
+    <!-- OEM Guides -->
+    <string name="guide_transsion_title">Infinix / Tecno / Itel (XOS &amp; HiOS)</string>
+    <string name="guide_transsion_feature">XHide &amp; App Freezer</string>
+    <string name="guide_transsion_summary">Infinix and Tecno phones feature built-in stealth vault \'XHide\' and app freezing to make apps completely invisible.</string>
+    <string name="guide_transsion_steps">1. Open the \'Phone Master\' app -> Tools -> XHide (or pinch out with 2 fingers on home screen).\n2. Set a secret dialer code (e.g. ##1234).\n3. Tap \'Hidden Apps\' and add Easypaisa, JazzCash, or Banks.\n4. Hidden apps disappear from launcher and search!\n5. You can also use \'Freezer\' to freeze unused apps so they run zero background activity.</string>
+    <string name="guide_transsion_btn">Open Phone Master / Dialer</string>
+
+    <string name="guide_samsung_title">Samsung Galaxy (One UI)</string>
+    <string name="guide_samsung_feature">Secure Folder (Knox Vault)</string>
+    <string name="guide_samsung_summary">Hardware-isolated Knox container that runs duplicate encrypted copies of financial apps with a separate password.</string>
+    <string name="guide_samsung_steps">1. Go to Settings -> Security and privacy -> More security settings -> Secure Folder.\n2. Sign in with Samsung account and create a separate PIN/Password.\n3. Add banking apps inside Secure Folder.\n4. In Secure Folder settings, toggle \'Hide Secure Folder icon from Apps screen\'.\n5. When hidden, it can only be unhidden via the Quick Settings tile or Settings.</string>
+    <string name="guide_samsung_btn">Open Secure Folder</string>
+
+    <string name="guide_xiaomi_title">Xiaomi / Redmi / Poco (MIUI &amp; HyperOS)</string>
+    <string name="guide_xiaomi_feature">Second Space &amp; Hidden Apps</string>
+    <string name="guide_xiaomi_summary">Creates an entirely separate encrypted phone profile, or conceals apps behind a two-finger pinch gesture.</string>
+    <string name="guide_xiaomi_steps">Method A (Second Space):\n1. Settings -> Additional Settings -> Second Space.\n2. Set a different unlock PIN/fingerprint.\n3. Install bank apps only in Second Space. Snatchers in First Space see zero financial apps!\n\nMethod B (Hidden Apps):\n1. Open \'Security\' app -> App Lock -> Hidden Apps.\n2. Select apps to hide. Pinch out with 2 fingers on home screen to view.</string>
+    <string name="guide_xiaomi_btn">Open Security / Second Space</string>
+
+    <string name="guide_vivo_title">Vivo / iQOO (FuntouchOS)</string>
+    <string name="guide_vivo_feature">Privacy &amp; App Encryption</string>
+    <string name="guide_vivo_summary">FuntouchOS allows encrypting and completely hiding app icons from the launcher and recent apps.</string>
+    <string name="guide_vivo_steps">1. Settings -> Security -> Privacy and app encryption.\n2. Set a privacy password.\n3. Tap \'Hide App\' and toggle banking apps.\n4. Enable \'View hidden apps by swiping up with two fingers on the home screen\'.\n5. Enable \'Verify privacy password\' before viewing.</string>
+    <string name="guide_vivo_btn">Open Vivo Security</string>
+
+    <string name="guide_oppo_title">Oppo / Realme / OnePlus (ColorOS)</string>
+    <string name="guide_oppo_feature">Hide Apps &amp; Private Safe</string>
+    <string name="guide_oppo_summary">ColorOS hides apps completely behind a secret dialer code (e.g. #0000#) typed in the phone keypad.</string>
+    <string name="guide_oppo_steps">1. Settings -> Privacy -> Hide apps.\n2. Set a privacy password.\n3. Set an access code that starts and ends with # (e.g. #9876#).\n4. Select banking apps. They will vanish from desktop, recent tasks, and notifications!\n5. To access: Open Phone app and dial your access code.</string>
+    <string name="guide_oppo_btn">Open Privacy Settings</string>
+
+    <string name="guide_private_space_title">Android 15+ Private Space</string>
+    <string name="guide_private_space_feature">Built-in Private Space</string>
+    <string name="guide_private_space_summary">Native Android 15 sandboxed space at the bottom of the app drawer with independent lock credentials.</string>
+    <string name="guide_private_space_steps">1. Settings -> Security &amp; privacy -> Private space.\n2. Set up a separate lock screen PIN or fingerprint.\n3. Install sensitive financial apps directly into Private Space.\n4. Enable \'Hide private space when locked\' so the section doesn\'t even appear in your app drawer until searched.</string>
+    <string name="guide_private_space_btn">Open Private Space</string>
+
+    <string name="guide_shelter_title">Shelter &amp; Island (Android 8–14 Sandbox)</string>
+    <string name="guide_shelter_feature">Android Work Profile Isolation</string>
+    <string name="guide_shelter_summary">Universal open-source sandbox using Android\'s native Work Profile. Freezes sensitive apps and hides them with a single toggle.</string>
+    <string name="guide_shelter_steps">1. Install \'Shelter\' (from F-Droid or Play Store).\n2. Follow setup to activate the Android Work Profile.\n3. Clone Easypaisa, JazzCash, and banking apps into Shelter.\n4. Uninstall the apps from your main personal profile.\n5. Emergency Kill-Switch: Pull down Quick Settings and toggle \'Work Mode\' OFF — all isolated apps instantly vanish and freeze!</string>
+    <string name="guide_shelter_btn">Launch / Install Shelter</string>
+
+    <!-- Phase 5: Money Guide (Financial Coercion Defense) -->
+    <string name="tab_money_guide">Money Guide</string>
+    <string name="money_guide_title">Financial Coercion Defense</string>
+    <string name="money_guide_subtitle">Protect bank accounts, mobile wallets, and life savings from forced transfers during snatching or extortion.</string>
+    <string name="money_score_label">Financial Hardening Progress</string>
+    <string name="money_score_status">%1$d of %2$d Defense Pillars Applied (%3$d%%)</string>
+    <string name="subtab_pillars">Defense Pillars</string>
+    <string name="subtab_helplines">Emergency Freezing Directory</string>
+    <string name="badge_critical_opsec">CRITICAL OPSEC</string>
+    <string name="badge_recommended_opsec">RECOMMENDED</string>
+    <string name="why_it_matters_title">Attacker Threat Model &amp; MO:</string>
+    <string name="action_steps_title">Operational Defense Steps:</string>
+    <string name="mark_pillar_implemented">Mark Implemented</string>
+    <string name="reset_money_checklist_btn">Reset Progress</string>
+    <string name="helpline_directory_desc">Call immediately after escaping to block SIMs and freeze digital banking channels before attackers can transfer funds.</string>
+    <string name="btn_dial_now">Dial Helpline</string>
+    <string name="filter_all">All</string>
+    <string name="filter_sim">SIM Cards</string>
+    <string name="filter_wallets">Wallets &amp; EMIs</string>
+    <string name="filter_banks">Commercial Banks</string>
+
+    <!-- Pillar 1: Limits -->
+    <string name="pillar_limits_title">Lower Daily &amp; Per-Transaction Limits</string>
+    <string name="pillar_limits_subtitle">Cap digital transfer limits to minimal amounts across Easypaisa, JazzCash, Raast, and Banks.</string>
+    <string name="pillar_limits_why">When attackers force victims to unlock their phone under duress, they immediately check balances and attempt to transfer the maximum daily limit (often Rs. 50,000 to Rs. 250,000). A pre-configured low limit stops the theft at the source.</string>
+    <string name="pillar_limits_steps">1. Easypaisa / JazzCash: Open Account Settings -> Daily Limits -> set to the minimum practical amount (e.g. Rs. 5,000 - 10,000).\n2. Banking Apps: Contact customer service or bank portal to reduce daily third-party funds transfer limit.\n3. Raast: Lower Raast instant payment limits to avoid instant interbank draining.\n4. ATM / POS: Set daily debit card POS limit to zero when not shopping.</string>
+
+    <!-- Pillar 2: Whitelisting -->
+    <string name="pillar_whitelist_title">Beneficiary Whitelisting &amp; Cooling-Off Delays</string>
+    <string name="pillar_whitelist_subtitle">Enforce 2–24 hour delays on adding new transfer recipients.</string>
+    <string name="pillar_whitelist_why">Snatchers transfer money to third-party mule accounts. If your bank requires adding a beneficiary with an enforced 2-hour or 24-hour cooling-off period before funds can move, attackers cannot transfer your money immediately.</string>
+    <string name="pillar_whitelist_steps">1. In Bank Settings, disable \'Instant Quick Pay\' to unadded payees if your bank allows it.\n2. Keep only verified family members and utility billers as pre-approved beneficiaries.\n3. Check your bank\'s cooling-off policy (Meezan, HBL, Standard Chartered enforce cooling-off by default).\n4. If an attacker forces you to add a new account, the app will show \'Cannot transfer for 2 hours\'.</string>
+
+    <!-- Pillar 3: Time-Lock -->
+    <string name="pillar_timelock_title">Time-Locked Deposits &amp; Account Separation</string>
+    <string name="pillar_timelock_subtitle">Never keep life savings in checking accounts accessible on your daily mobile phone.</string>
+    <string name="pillar_timelock_why">Liquid cash in checking accounts or mobile wallets is instantly transferable under coercion. Funds locked in fixed-term deposits or secondary savings accounts cannot be liquidated without multi-day branch approval or notice.</string>
+    <string name="pillar_timelock_steps">1. Two-Account Strategy: Use an everyday \'Street Account\' with minimal balance (Rs. 3,000–5,000), and keep your primary wealth in a \'Vault Account\' at a different bank.\n2. Term Deposits (TDRs / Bachat Certificates): Lock savings in 3-month or 1-year terms. They cannot be transferred via mobile app.\n3. Digital Vaults: Use SadaPay Vaults or JazzCash Bachat Committees where funds take 24 hours to mature before withdrawal.\n4. Never install the banking app of your primary life-savings account on your street phone.</string>
+
+    <!-- Pillar 4: Hardware Wallet -->
+    <string name="pillar_crypto_title">Cold Storage &amp; Zero Crypto on Street Phone</string>
+    <string name="pillar_crypto_subtitle">Zero cryptocurrency hot wallets or exchange balances on everyday mobile devices.</string>
+    <string name="pillar_crypto_why">Criminals actively look for Binance, OKX, Trust Wallet, or Telegram crypto bots. Because crypto transactions are completely irreversible, victims are held until entire balances are drained.</string>
+    <string name="pillar_crypto_steps">1. Offline Hardware Wallet: Store major crypto holdings on an air-gapped hardware wallet (Ledger, Trezor, Keystone, Tangem) stored securely at home.\n2. Delete Hot Wallets: Never keep Trust Wallet, Metamask, or Binance on a phone you take outside.\n3. Physical Seed Phrase Security: Never photograph or store your 12/24 seed words on Google Drive, Notes, or WhatsApp.\n4. If trading is necessary, use a dedicated secondary device kept exclusively in a secure home location.</string>
+
+    <!-- Pillar 5: Remote Lock -->
+    <string name="pillar_remote_title">Android Find My Device &amp; 15-Minute Emergency Window</string>
+    <string name="pillar_remote_subtitle">Preparation for instant remote wipe and helpline blocking post-incident.</string>
+    <string name="pillar_remote_why">After escaping from muggers, there is a critical 15-minute window before they can crack your device. Remotely locking the device and immediately blocking the SIM stops OTP delivery.</string>
+    <string name="pillar_remote_steps">1. Verify Find My Device is ON: Settings -> Google -> Find My Device -> toggle ON.\n2. Remember Google Account login (email &amp; password) to access android.com/find from any browser or friend\'s phone to erase or lock.\n3. Post-Incident Priority 1: Call your telecom operator immediately from any bystander phone to block the SIM card (stops SMS OTPs).\n4. Post-Incident Priority 2: Call Easypaisa/JazzCash and bank helplines to block mobile banking channels.</string>
+
+    <!-- Helpline Notes -->
+    <string name="helpline_sim_block_note">Ask representative to immediately block lost SIM to prevent OTP theft and unauthorized calls.</string>
+    <string name="helpline_wallet_block_note">Request immediate temporary suspension of mobile wallet and linked debit cards.</string>
+    <string name="helpline_bank_block_note">Request immediate blocking of digital mobile app access, internet banking, and debit card.</string>
+
+    <!-- Phase 6: Hardening, Doze, Keep-Alive, Accidental Guards, Privacy Screen -->
+    <string name="tab_hardening">Hardening</string>
+    <string name="hardening_title">Device Hardening &amp; Persistence</string>
+    <string name="hardening_subtitle">Configure background persistence, accidental trigger guards, and privacy screen protections.</string>
+
+    <!-- Doze & Battery Optimization -->
+    <string name="section_doze_title">Background Keep-Alive (Doze Exemption)</string>
+    <string name="section_doze_desc">Prevents Android from putting Duress to sleep when the screen is locked, ensuring emergency key sequences are reliably detected.</string>
+    <string name="doze_status_exempted">Battery Optimization: Exempted (Optimal)</string>
+    <string name="doze_status_not_exempted">Battery Optimization: Active (Risk of sleep delays)</string>
+    <string name="btn_request_doze">Exempt from Battery Saver</string>
+    <string name="perm_doze_explanation_title">Why Battery Optimization Exemption is Needed</string>
+    <string name="perm_doze_explanation_body">Aggressive Android power managers (especially on Infinix, Tecno, Xiaomi, and Samsung) freeze background apps when the phone is locked. Exempting Duress ensures the volume button sequence responds instantaneously when you need it.</string>
+
+    <!-- OEM Keep-Alive Wizard -->
+    <string name="section_keepalive_title">OEM Background Keep-Alive Wizard</string>
+    <string name="section_keepalive_desc">Vendor-specific steps and direct settings links to stop aggressive OEM task killers from freezing Duress.</string>
+    <string name="keepalive_transsion_title">Infinix / Tecno / Itel (XOS / HiOS)</string>
+    <string name="keepalive_transsion_summary">Transsion devices aggressively kill background services via Power Master and Battery Lab.</string>
+    <string name="keepalive_transsion_steps">1. Open Phone Master -> Auto-start management -> Enable Duress.\n2. In Recent Apps, swipe down on Duress to lock it with a padlock icon.\n3. Open Settings -> Battery Lab -> Disable \'Sleep Mode\' for Duress.</string>
+    <string name="keepalive_transsion_btn">Open Phone Master / Auto-Start</string>
+
+    <string name="keepalive_xiaomi_title">Xiaomi / Redmi / Poco (MIUI / HyperOS)</string>
+    <string name="keepalive_xiaomi_summary">MIUI enforces strict background activity limits and aggressive RAM cleaning.</string>
+    <string name="keepalive_xiaomi_steps">1. Settings -> Apps -> Permissions -> Autostart -> Allow Duress.\n2. Settings -> Battery -> Duress -> Select \'No restrictions\'.\n3. In Recent Apps, press and hold Duress card -> tap the Lock icon.</string>
+    <string name="keepalive_xiaomi_btn">Open MIUI Autostart &amp; Battery</string>
+
+    <string name="keepalive_vivo_title">Vivo / iQOO (FuntouchOS)</string>
+    <string name="keepalive_vivo_summary">FuntouchOS throttles non-whitelisted apps when running in the background.</string>
+    <string name="keepalive_vivo_steps">1. Settings -> Battery -> High background power consumption -> Allow Duress.\n2. Open iManager -> App Manager -> Autostart Manager -> Enable Duress.\n3. In Recent Apps, swipe down on Duress to lock.</string>
+    <string name="keepalive_vivo_btn">Open Vivo iManager</string>
+
+    <string name="keepalive_oppo_title">Oppo / Realme / OnePlus (ColorOS)</string>
+    <string name="keepalive_oppo_summary">ColorOS aggressively freezes background tasks and clears them on screen lock.</string>
+    <string name="keepalive_oppo_steps">1. Settings -> Battery -> App Battery Management -> Duress -> Allow background activity.\n2. Enable \'Allow auto-launch\'.\n3. In Recent Apps, tap the 3 dots on Duress -> Lock.</string>
+    <string name="keepalive_oppo_btn">Open ColorOS Battery Management</string>
+
+    <string name="keepalive_samsung_title">Samsung Galaxy (One UI)</string>
+    <string name="keepalive_samsung_summary">One UI places inactive background apps into deep sleep.</string>
+    <string name="keepalive_samsung_steps">1. Settings -> Battery -> Background usage limits -> Never sleeping apps -> Add Duress.\n2. Turn off \'Put unused apps to sleep\' if possible.</string>
+    <string name="keepalive_samsung_btn">Open Samsung Battery Settings</string>
+
+    <string name="keepalive_generic_title">Standard Android Device</string>
+    <string name="keepalive_generic_summary">Ensure background data and power optimization are set to unrestricted.</string>
+    <string name="keepalive_generic_steps">1. Settings -> Apps -> Duress -> Battery -> Unrestricted.\n2. Mobile Data -> Allow background data usage.</string>
+    <string name="keepalive_generic_btn">Open App Info &amp; Battery</string>
+
+    <!-- Accidental Guards -->
+    <string name="section_accidental_guards">Accidental Trigger Guards</string>
+    <string name="accidental_guards_desc">Guards to prevent accidental triggers in pockets, bags, or during handling.</string>
+    <string name="guard_toggle_label">Enable Smart Trigger Guards</string>
+    <string name="abort_window_title">Pre-SOS Grace Period &amp; Abort Window</string>
+    <string name="abort_window_desc">When key sequence is pressed, phone vibrates twice and waits before sending SOS. Pressing the opposite volume button immediately cancels the trigger.</string>
+    <string name="abort_window_instant">Instant (0s delay - No grace period)</string>
+    <string name="abort_window_3s">3 Seconds Grace Window</string>
+    <string name="abort_window_5s">5 Seconds Grace Window</string>
+    <string name="screen_filter_title">Screen State Requirement</string>
+    <string name="screen_filter_all">Any State (Screen Locked or On)</string>
+    <string name="screen_filter_off_only">Screen OFF Only (Pocket / Locked)</string>
+    <string name="screen_filter_on_only">Screen ON Only</string>
+
+    <!-- Privacy Screen & Camouflage -->
+    <string name="section_privacy_screen">Anti-Shoulder Surfing &amp; Screen Masking</string>
+    <string name="privacy_screen_desc">Prevents screenshots, blocks screen recorders, and masks recent tasks thumbnails.</string>
+    <string name="flag_secure_label">Hardware Screenshot &amp; Recents Masking (FLAG_SECURE)</string>
+    <string name="flag_secure_desc">Shows a blank black preview in the Android app switcher so bystanders cannot see your Duress configuration.</string>
+    <string name="test_camouflage_btn">Preview Quick Screen Camouflage</string>
+    <string name="camouflage_notice">Tap anywhere twice to exit camouflage mode.</string>
+    <string name="fake_update_text">System Update Installing…\nDo not turn off your device (34%)</string>
+</resources>
